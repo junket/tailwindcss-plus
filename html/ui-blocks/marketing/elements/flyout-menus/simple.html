@@ -1,0 +1,21 @@
+<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="relative">
+  <button popovertarget="desktop-menu-solutions" class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white">
+    <span>Solutions</span>
+    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5">
+      <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+    </svg>
+  </button>
+
+  <el-popover id="desktop-menu-solutions" anchor="bottom" popover class="w-screen max-w-min overflow-visible bg-transparent px-4 transition transition-discrete [--anchor-gap:--spacing(5)] backdrop:bg-transparent open:flex data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+    <div class="w-56 shrink rounded-xl bg-white p-4 text-sm/6 font-semibold text-gray-900 shadow-lg outline-1 outline-gray-900/5 dark:bg-gray-800 dark:text-white dark:shadow-none dark:outline dark:-outline-offset-1 dark:outline-white/10">
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Analytics</a>
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Engagement</a>
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Security</a>
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Integrations</a>
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Automations</a>
+      <a href="#" class="block p-2 hover:text-indigo-600 dark:hover:text-indigo-400">Reports</a>
+    </div>
+  </el-popover>
+</div>

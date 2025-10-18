@@ -1,0 +1,245 @@
+<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+      <!-- Image gallery -->
+      <el-tab-group class="flex flex-col-reverse">
+        <!-- Image selector -->
+        <div class="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+          <el-tab-list class="grid grid-cols-4 gap-6">
+            <button class="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium text-gray-900 uppercase hover:bg-gray-50 focus:ring-3 focus:ring-indigo-500/50 focus:ring-offset-4 focus:outline-hidden">
+              <span class="sr-only">Angled view</span>
+              <span class="absolute inset-0 overflow-hidden rounded-md">
+                <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-01.jpg" alt="" class="size-full object-cover" />
+              </span>
+              <span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 in-aria-selected:ring-indigo-500"></span>
+            </button>
+            <button class="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium text-gray-900 uppercase hover:bg-gray-50 focus:ring-3 focus:ring-indigo-500/50 focus:ring-offset-4 focus:outline-hidden">
+              <span class="sr-only">Front view</span>
+              <span class="absolute inset-0 overflow-hidden rounded-md">
+                <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-02.jpg" alt="" class="size-full object-cover" />
+              </span>
+              <span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 in-aria-selected:ring-indigo-500"></span>
+            </button>
+            <button class="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium text-gray-900 uppercase hover:bg-gray-50 focus:ring-3 focus:ring-indigo-500/50 focus:ring-offset-4 focus:outline-hidden">
+              <span class="sr-only">Back view</span>
+              <span class="absolute inset-0 overflow-hidden rounded-md">
+                <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-03.jpg" alt="" class="size-full object-cover" />
+              </span>
+              <span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 in-aria-selected:ring-indigo-500"></span>
+            </button>
+            <button class="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium text-gray-900 uppercase hover:bg-gray-50 focus:ring-3 focus:ring-indigo-500/50 focus:ring-offset-4 focus:outline-hidden">
+              <span class="sr-only">Back angle open view</span>
+              <span class="absolute inset-0 overflow-hidden rounded-md">
+                <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-04.jpg" alt="" class="size-full object-cover" />
+              </span>
+              <span aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-md ring-2 ring-transparent ring-offset-2 in-aria-selected:ring-indigo-500"></span>
+            </button>
+          </el-tab-list>
+        </div>
+
+        <el-tab-panels>
+          <div>
+            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-01.jpg" alt="Angled front view with bag zipped and handles upright." class="aspect-square w-full object-cover sm:rounded-lg" />
+          </div>
+          <div hidden>
+            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-02.jpg" alt="Front view with bag zipped and handles upright." class="aspect-square w-full object-cover sm:rounded-lg" />
+          </div>
+          <div hidden>
+            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-03.jpg" alt="Back view with bag zipped and straps hanging down." class="aspect-square w-full object-cover sm:rounded-lg" />
+          </div>
+          <div hidden>
+            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-03-product-04.jpg" alt="Back angled view with bag open and handles to the side." class="aspect-square w-full object-cover sm:rounded-lg" />
+          </div>
+        </el-tab-panels>
+      </el-tab-group>
+
+      <!-- Product info -->
+      <div class="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">Zip Tote Basket</h1>
+
+        <div class="mt-3">
+          <h2 class="sr-only">Product information</h2>
+          <p class="text-3xl tracking-tight text-gray-900">$140</p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="mt-3">
+          <h3 class="sr-only">Reviews</h3>
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <!-- Active: "text-indigo-500", Inactive: "text-gray-300" -->
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-indigo-500">
+                <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-indigo-500">
+                <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-indigo-500">
+                <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-indigo-500">
+                <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-300">
+                <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="sr-only">4 out of 5 stars</p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h3 class="sr-only">Description</h3>
+
+          <div class="space-y-6 text-base text-gray-700">
+            <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+          </div>
+        </div>
+
+        <form class="mt-6">
+          <!-- Colors -->
+          <div>
+            <h3 class="text-sm font-medium text-gray-600">Color</h3>
+
+            <fieldset aria-label="Choose a color" class="mt-2">
+              <div class="flex items-center gap-x-3">
+                <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                  <input type="radio" name="color" value="washed-black" checked aria-label="Washed Black" class="size-8 appearance-none rounded-full bg-gray-700 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-700 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                </div>
+                <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                  <input type="radio" name="color" value="white" aria-label="White" class="size-8 appearance-none rounded-full bg-white forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-400 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                </div>
+                <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                  <input type="radio" name="color" value="washed-gray" aria-label="Washed Gray" class="size-8 appearance-none rounded-full bg-gray-500 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-500 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="mt-10 flex">
+            <button type="submit" class="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-hidden sm:w-full">Add to bag</button>
+
+            <button type="button" class="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400 hover:bg-gray-100 hover:text-gray-500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0">
+                <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="sr-only">Add to favorites</span>
+            </button>
+          </div>
+        </form>
+
+        <section aria-labelledby="details-heading" class="mt-12">
+          <h2 id="details-heading" class="sr-only">Additional details</h2>
+
+          <div class="divide-y divide-gray-200 border-t border-gray-200">
+            <div>
+              <h3>
+                <button type="button" command="--toggle" commandfor="detail-0" class="group relative flex w-full items-center justify-between py-6 text-left">
+                  <span class="text-sm font-medium not-in-aria-expanded:text-gray-900 in-aria-expanded:text-indigo-600">Features</span>
+                  <span class="ml-6 flex items-center">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-gray-500 in-aria-expanded:hidden">
+                      <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-indigo-400 not-in-aria-expanded:hidden group-hover:text-indigo-500">
+                      <path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <el-disclosure id="detail-0" class="contents">
+                <div class="pb-6">
+                  <ul role="list" class="list-disc space-y-1 pl-5 text-sm/6 text-gray-700 marker:text-gray-300">
+                    <li class="pl-2">Multiple strap configurations</li>
+                    <li class="pl-2">Spacious interior with top zip</li>
+                    <li class="pl-2">Leather handle and tabs</li>
+                    <li class="pl-2">Interior dividers</li>
+                    <li class="pl-2">Stainless strap loops</li>
+                    <li class="pl-2">Double stitched construction</li>
+                    <li class="pl-2">Water-resistant</li>
+                  </ul>
+                </div>
+              </el-disclosure>
+            </div>
+            <div>
+              <h3>
+                <button type="button" command="--toggle" commandfor="detail-1" class="group relative flex w-full items-center justify-between py-6 text-left">
+                  <span class="text-sm font-medium not-in-aria-expanded:text-gray-900 in-aria-expanded:text-indigo-600">Care</span>
+                  <span class="ml-6 flex items-center">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-gray-500 in-aria-expanded:hidden">
+                      <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-indigo-400 not-in-aria-expanded:hidden group-hover:text-indigo-500">
+                      <path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <el-disclosure id="detail-1" hidden class="contents">
+                <div class="pb-6">
+                  <ul role="list" class="list-disc space-y-1 pl-5 text-sm/6 text-gray-700 marker:text-gray-300">
+                    <li class="pl-2">Spot clean as needed</li>
+                    <li class="pl-2">Hand wash with mild soap</li>
+                    <li class="pl-2">Machine wash interior dividers</li>
+                    <li class="pl-2">Treat handle and tabs with leather conditioner</li>
+                  </ul>
+                </div>
+              </el-disclosure>
+            </div>
+            <div>
+              <h3>
+                <button type="button" command="--toggle" commandfor="detail-2" class="group relative flex w-full items-center justify-between py-6 text-left">
+                  <span class="text-sm font-medium not-in-aria-expanded:text-gray-900 in-aria-expanded:text-indigo-600">Shipping</span>
+                  <span class="ml-6 flex items-center">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-gray-500 in-aria-expanded:hidden">
+                      <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-indigo-400 not-in-aria-expanded:hidden group-hover:text-indigo-500">
+                      <path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <el-disclosure id="detail-2" hidden class="contents">
+                <div class="pb-6">
+                  <ul role="list" class="list-disc space-y-1 pl-5 text-sm/6 text-gray-700 marker:text-gray-300">
+                    <li class="pl-2">Free shipping on orders over $300</li>
+                    <li class="pl-2">International shipping available</li>
+                    <li class="pl-2">Expedited shipping options</li>
+                    <li class="pl-2">Signature required upon delivery</li>
+                  </ul>
+                </div>
+              </el-disclosure>
+            </div>
+            <div>
+              <h3>
+                <button type="button" command="--toggle" commandfor="detail-3" class="group relative flex w-full items-center justify-between py-6 text-left">
+                  <span class="text-sm font-medium not-in-aria-expanded:text-gray-900 in-aria-expanded:text-indigo-600">Returns</span>
+                  <span class="ml-6 flex items-center">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-gray-400 group-hover:text-gray-500 in-aria-expanded:hidden">
+                      <path d="M12 4.5v15m7.5-7.5h-15" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-indigo-400 not-in-aria-expanded:hidden group-hover:text-indigo-500">
+                      <path d="M5 12h14" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <el-disclosure id="detail-3" hidden class="contents">
+                <div class="pb-6">
+                  <ul role="list" class="list-disc space-y-1 pl-5 text-sm/6 text-gray-700 marker:text-gray-300">
+                    <li class="pl-2">Easy return requests</li>
+                    <li class="pl-2">Pre-paid shipping label included</li>
+                    <li class="pl-2">10% restocking fee for returns</li>
+                    <li class="pl-2">60 day return window</li>
+                  </ul>
+                </div>
+              </el-disclosure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
